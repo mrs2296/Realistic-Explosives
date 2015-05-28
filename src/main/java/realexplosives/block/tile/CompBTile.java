@@ -1,5 +1,8 @@
 package realexplosives.block.tile;
 
-public class CompBTile {
+import realexplosives.block.REBaseTile;
+
+public class CompBTile extends REBaseTile
+{
 
 }
