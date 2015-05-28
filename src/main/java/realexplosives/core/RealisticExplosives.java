@@ -97,35 +97,34 @@ public class RealisticExplosives {
 		GameRegistry.registerTileEntity(REBaseTile.class, "RETileEntity");
 				
 		//ItemStack Block 64
-		ItemStack RDXStack = new ItemStack(realexplosives.block.RDX,64);
-		ItemStack CopperStack = new ItemStack(Block.Copper,64);
-		ItemStack WaxStack = new ItemStack(Block.Wax,64);
-		ItemStack AluminiumStack = new ItemStack(Block.Aluminium,64);
-		ItemStack CompositionBStack = new ItemStack(Block.CompositionB,64);
-		ItemStack H6Stack = new ItemStack(Block.H6,64);
-		ItemStack CompositionAStack = new ItemStack(Block.Composition,64);
-		ItemStack SemtexStack = new ItemStack(Block.Semtex,64);
-		ItemStack TorpexStack = new ItemStack(Block.Torpex,64);
-		ItemStack DynamiteStack = new ItemStack(Block.Dynamite,64);
-		ItemStack AntiPersonalMineStack = new ItemStack(Block.AntiPersonalMine,64);
+		ItemStack RDXStack = new ItemStack(RDX,64);
+		ItemStack CopperStack = new ItemStack(Copper,64);
+		ItemStack WaxStack = new ItemStack(Wax,64);
+		ItemStack AluminiumStack = new ItemStack(Aluminium,64);
+		ItemStack CompositionBStack = new ItemStack(CompositionB,64);
+		ItemStack H6Stack = new ItemStack(H6,64);
+		ItemStack CompositionAStack = new ItemStack(CompositionA,64);
+		ItemStack SemtexStack = new ItemStack(Semtex,64);
+		ItemStack TorpexStack = new ItemStack(Torpex,64);
+		ItemStack DynamiteStack = new ItemStack(Dynamite,64);
+		ItemStack AntiPersonalMineStack = new ItemStack(AntiPersonalMine,64);
 				
 		//ItemStack Item 64
-		ItemStack NitricAcidStack = new ItemStack(Item.NitricAcid,64);
-		ItemStack HexamineStack = new ItemStack(Item.Hexamine,64);
-		ItemStack AmmoniaStack = new ItemStack(Item.Ammonia,64);
-		ItemStack PowderedAluminiumStack = new ItemStack(Item.PowderedAluminium,64);
-		ItemStack PentaerythritolStack = new ItemStack(Item.Pentaerythritol,64);
-		ItemStack GlycerolStack = new ItemStack(Item.Glycerol,64);
-		ItemStack NitroglycerinStack = new ItemStack(Item.Nitroglycerin,64);
-		ItemStack FormaldehydeStack = new ItemStack(Item.Formaldehyde,64);
-		ItemStack NitricAcidStack = new ItemStack(Item.NitricAcid,64);
-		ItemStack NitricAcidStack = new ItemStack(Item.NitricAcid,64);
-		ItemStack NitricAcidStack = new ItemStack(Item.NitricAcid,64);
-		ItemStack NitricAcidStack = new ItemStack(Item.NitricAcid,64);
-		ItemStack NitricAcidStack = new ItemStack(Item.NitricAcid,64);
+		ItemStack NitricAcidStack = new ItemStack(NitricAcid,64);
+		ItemStack HexamineStack = new ItemStack(Hexamine,64);
+		ItemStack AmmoniaStack = new ItemStack(Ammonia,64);
+		ItemStack PowderedAluminiumStack = new ItemStack(PowderedAluminium,64);
+		ItemStack PentaerythritolStack = new ItemStack(Pentaerythritol,64);
+		ItemStack GlycerolStack = new ItemStack(Glycerol,64);
+		ItemStack NitroglycerinStack = new ItemStack(Nitroglycerin,64);
+		ItemStack FormaldehydeStack = new ItemStack(Formaldehyde,64);
+		ItemStack AcetylaldehydeStack = new ItemStack(Acetylaldehyde,64);
+		ItemStack SodiumCarbonateStack = new ItemStack(SodiumCarbonate,64);
+		ItemStack IRDXStack = new ItemStack(IRDX,64);
 				
 		//crafting Blocks
-		GameRegistry.addShapelessRecipe( ItemStack(Block.RDX), (Item.IRDX));
+		GameRegistry.addShapelessRecipe( RDXStack, IRDXStack,IRDXStack,IRDXStack,IRDXStack,IRDXStack,IRDXStack,IRDXStack,IRDXStack,IRDXStack);
+		
 						
 		//crafting Items
 	}
