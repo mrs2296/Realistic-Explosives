@@ -1,4 +1,4 @@
-package realexplosives.block;
+package realexplosives.block.ore;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

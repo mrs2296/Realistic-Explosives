@@ -1,4 +1,4 @@
-package realexplosives.item.tools;
+package realexplosives.item.tool;
 
 import java.lang.reflect.Array;
 
