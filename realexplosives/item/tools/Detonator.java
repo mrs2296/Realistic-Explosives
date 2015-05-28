@@ -42,7 +42,6 @@ public class Detonator extends Item {
 		return false;
 	}
 	
-	
 	@Override
 	public ItemStack onItemRightClick(ItemStack item, World w, EntityPlayer p)
 	{
