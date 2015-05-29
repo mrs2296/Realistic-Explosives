@@ -21,6 +21,7 @@ public class RETileRender extends TileEntitySpecialRenderer
 	@Override
 	public void renderTileEntityAt(TileEntity tile, double x, double y, double z, float f)
 	{
+		int metadata = tile.getBlockMetadata();
 		Tessellator t = Tessellator.instance;
 		
 		//Depth
@@ -34,6 +35,44 @@ public class RETileRender extends TileEntitySpecialRenderer
 		
 		GL11.glPushMatrix();
 		GL11.glTranslated(x,y,z);
+		
+		//North
+		if(metadata == 1)
+		{
+			GL11.glTranslated(0, 0, 1);
+			GL11.glRotated(-90, 1, 0, 0);
+		}
+		
+		//South
+		if(metadata == 2)
+		{
+			GL11.glTranslated(0,1,0);
+			GL11.glRotated(90, 1, 0, 0);
+		}
+		
+		//West
+		if(metadata == 3)
+		{
+			GL11.glRotated(90, 0, 1, 0);
+			GL11.glTranslated(-1, 0, 0);
+			GL11.glTranslated(0, 0, 1);
+			GL11.glRotated(-90, 1, 0, 0);
+		}
+		
+		//East
+		if(metadata == 4)
+		{
+			GL11.glRotated(90, 0, 1, 0);
+			GL11.glTranslated(-1, 0, 0);
+			GL11.glTranslated(0,1,0);
+			GL11.glRotated(90, 1, 0, 0);
+		}
+		
+		//Top
+		if(metadata == 5)
+		{
+			
+		}
 		
 		//Top (Facing)
 		t.startDrawingQuads();

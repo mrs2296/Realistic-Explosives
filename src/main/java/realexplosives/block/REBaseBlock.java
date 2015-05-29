@@ -29,10 +29,10 @@ public class REBaseBlock extends BlockContainer {
 	
 	public boolean canPlaceBlockAt(World w, int x, int y, int z)
 	{
-		return  w.isSideSolid(x, y, z, NORTH) ||
-				w.isSideSolid(x, y, z, SOUTH) ||
-				w.isSideSolid(x, y, z, WEST)  ||
-				w.isSideSolid(x, y, z, EAST)  ||
+		return  w.isSideSolid(x, y, z + 1, NORTH) ||
+				w.isSideSolid(x, y, z - 1, SOUTH) ||
+				w.isSideSolid(x + 1, y, z, WEST)  ||
+				w.isSideSolid(x - 1, y, z, EAST)  ||
 				this.topSolid(w, x, y, z);
 	}
 	
@@ -51,12 +51,12 @@ public class REBaseBlock extends BlockContainer {
 			m = 2;
 		}
 		
-		if(side == 4 && w.isSideSolid(x, y, z + 1, WEST))
+		if(side == 4 && w.isSideSolid(x + 1, y, z, WEST))
 		{
 			m = 3;
 		}
 		
-		if(side == 5 && w.isSideSolid(x, y, z - 1, EAST))
+		if(side == 5 && w.isSideSolid(x - 1, y, z, EAST))
 		{
 			m = 4;
 		}
